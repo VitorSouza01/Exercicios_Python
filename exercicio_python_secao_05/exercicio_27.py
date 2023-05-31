@@ -1,0 +1,26 @@
+"""
+27. Escreva um programa que, dada a idade de um nadador, classifique-o em uma das seguintes categorias:
+
+Categoria  | Idade
+Infantil A | 5 a 7
+Infantil B | 8 a 10
+Juvenil A  | 11 a 13
+Juvenil B  | 14 a 17
+Sênior     | maiores de 18
+"""
+
+print('[Descubra a Categoria de um Nadador]')
+idade = int(input('-Digite uma idade:'))
+
+if idade <5:
+    print(f'\nA idade de {idade} anos não pode participar de categorias de natação.')
+elif idade >= 5 and idade <= 7:
+    print(f'\nA idade de {idade} anos pertece à categoria: Infaltil A.')
+elif idade >=8 and idade <= 10:
+    print(f'\nA idade de {idade} anos pertece à categoria: Infaltil B.')
+elif idade >=11 and idade <= 13:
+    print(f'\nA idade de {idade} anos pertece à categoria: Juvenil A.')
+elif idade >=14 and idade <= 17:
+    print(f'\nA idade de {idade} anos pertece à categoria: Juvenil B.')
+elif idade >=18:
+    print(f'\nA idade de {idade} anos pertece à categoria: Sênior.')
